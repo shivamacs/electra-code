@@ -7,8 +7,8 @@ Code and build modern applications quickly and effectively. Built using [Electro
 
 ## Features
 - Desktop application
-- Inbuilt file explorer
-- Inbuilt terminal
+- Inbuilt file explorer (integrated js-tree, a jquery plugin)
+- Inbuilt terminal (integrated xterm, a terminal emulator)
 
 ## Setup & Install
 ### Requirements
