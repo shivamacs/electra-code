@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Electra Code</title>
+        <link rel="stylesheet" href="./node_modules/jstree/dist/themes/default/style.css" />
+        <link rel="stylesheet" href="./node_modules/xterm/css/xterm.css" />
+        <link rel="stylesheet" href="./node_modules/jquery-ui-dist/jquery-ui.css" />
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="main-window">
+                <div class="explorer">
+                    <div class="exp-heading">EXPLORER</div>
+                    <div class="tree" id="jstree"></div>
+                </div>
+                <div class="editor-terminal-window">
+                    <div class="file-tabs" id="file-tabs">
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="editor" id="editor"></div>
+                    <div class="terminal" id="terminal"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./node_modules/jstree/dist/jstree.js"></script>
+        <script src="renderer.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "electra-code",
+  "version": "1.0.0",
+  "description": "An application that implements basic functionality of VS Code editor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Shivam Arora",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.1.0",
+    "electron-reload": "^1.5.0",
+    "jquery": "^3.5.1",
+    "jquery-ui-dist": "^1.12.1",
+    "jstree": "^3.3.10",
+    "monaco-editor": "^0.20.0",
+    "monaco-themes": "^0.3.3",
+    "node-gyp": "^7.0.0",
+    "node-pty": "^0.9.0",
+    "xterm": "^4.8.1",
+    "xterm-addon-fit": "^0.4.0"
+  }
+}

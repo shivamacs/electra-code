@@ -1,0 +1,224 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./fonts/ubuntu/Ubuntu-Regular.ttf") format("woff"),
+    url("./fonts/ubuntu/Ubuntu-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  color: rgb(137, 164, 187);
+}
+
+.main-window {
+  display: flex;
+  flex-direction: row;
+}
+
+.explorer {
+  display: flex;
+  flex-direction: column;
+  background: rgb(1, 22, 39);
+  width: 350px;
+  height: 100vh;
+  font-family: "Ubuntu";
+  font-size: 13px;
+  overflow: auto;
+}
+
+.explorer::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: none;
+}
+
+.explorer::-webkit-scrollbar-thumb {
+  background: rgba(5, 78, 151, 0.3);
+}
+
+.explorer::-webkit-scrollbar-corner {
+  background: none;
+}
+
+.exp-heading {
+  height: 30px;
+  padding: 10px;
+}
+
+.jstree-default .jstree-hovered {
+  background: none;
+  color: white;
+  border-radius: 0;
+}
+
+.jstree-default .jstree-clicked {
+  background: rgb(11, 41, 66);
+  color: white;
+  border-radius: 0;
+}
+
+.jstree-rename-input {
+  padding-left: 2px !important;
+  outline: none;
+  color: white;
+  background: rgb(11, 41, 66); 
+  width: 225px !important; 
+}
+
+.rename-warning {
+  height: auto;
+  padding: 2px;
+  color: white;
+  background: rgb(139, 0, 0);
+  border: 1px solid red;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
+  white-space: normal;
+}
+
+.editor-terminal-window {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 350px);
+  height: 100vh;
+}
+
+#file-tabs {
+  height: 30px;
+  background: rgb(1, 22, 39);
+  border: none;
+  padding: 0;
+  font-family: "Ubuntu";
+  font-size: 13px;
+}
+
+.ui-tabs .ui-tabs-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  padding: 0;
+  height: 100%;
+  cursor: pointer;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.ui-tabs .ui-tabs-nav::-webkit-scrollbar {
+  height: 4px;
+  background: none;
+}
+
+.ui-tabs .ui-tabs-nav::-webkit-scrollbar-thumb {
+  background: rgba(5, 78, 151, 0.3);
+}
+
+.ui-tabs.ui-tabs-nav::-webkit-scrollbar-corner {
+  background: none;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  margin: 0;
+  float: none;
+  background: rgb(0, 12, 29);
+  border: none;
+  min-width: 30px;
+  line-height: 1;
+  border-top: 1px solid rgb(60, 60, 60);
+  border-right: 1px solid rgb(60, 60, 60);
+}
+
+.ui-tabs .ui-tabs-nav li:focus,
+.ui-tabs .ui-tabs-nav li a:focus,
+.ui-tabs .ui-tabs-nav li span:focus {
+  outline: none;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+  color: rgb(137, 164, 187);
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: rgb(11, 41, 66);
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+  color: white;
+  cursor: pointer;
+}
+
+.ui-corner-all,
+.ui-corner-left,
+.ui-corner-right,
+.ui-corner-top,
+.ui-corner-bottom .ui-corner-tr,
+.ui-corner-tl,
+.ui-corner-br,
+.ui-corner-bl {
+  border-radius: 0;
+}
+
+.ui-widget-header {
+  border: none;
+  border-bottom: 1px solid rgb(60, 60, 60);
+  background: none;
+}
+
+.ui-icon.ui-icon-close-custom:active {
+  transform: scale(1.2);
+}
+
+.ui-state-default .ui-icon.ui-icon-close-custom {
+  background-image: url("./icons/close/close-default.svg");
+  top: 9px;
+  right: 2px;
+  width: 12;
+  height: 12;
+}
+
+.ui-state-active .ui-icon.ui-icon-close-custom {
+  background-image: url("./icons/close/close-active.svg");
+  top: 9px;
+  right: 2px;
+  width: 12;
+  height: 12;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  padding-top: 5px;
+  padding-left: 5px;
+  line-height: 1.5;
+}
+
+.tab-icon {
+  float: left;
+  margin-right: 2px;
+  width: 20px;
+  height: 18px;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 380px);
+}
+
+.terminal.xterm {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 360px;
+  background: rgb(1, 22, 39);
+  border-top: 1px solid gray;
+}
